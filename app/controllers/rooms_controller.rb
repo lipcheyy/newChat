@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+  
   def index
     @room = Room.new
     @current_user = current_user
@@ -19,4 +20,5 @@ class RoomsController < ApplicationController
     @messages = @single_room.messages # save messages when reload
     render "index"
   end
+  
 end

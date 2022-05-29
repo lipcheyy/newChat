@@ -5,13 +5,26 @@
   }
 
   .col-md-10 {
-    height: 100vh;
+    height: 130vh;
     overflow: scroll;
+    overflow-x: hidden;
   }
-
+  .bb{
+    background: rgb(232,0,0);
+    background: linear-gradient(318deg, rgba(232,0,0,0.8757878151260504) 0%, rgba(181,37,235,1) 41%, rgba(238,83,83,0.9710259103641457) 93%);
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+  }
+  
   .msg-content {
     width: 80%;
     margin-right: 5px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
   }
   .message-box {
     width: fit-content;
@@ -19,6 +32,66 @@
     padding: 5px;
     border-radius: 10px;
     margin-bottom: 10px;
-    background-color: #555555 ;
+    background-color: #535353 ;
     padding: 10px
   }
+  .name{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(140, 238, 240);
+    
+  }
+  .room-name{
+    font-family: 'Jost';
+    font-style:normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: rgb(45, 94, 99);
+  }
+  
+  .message-box .bier{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+  }
+  .shd:hover{
+    background-color: #e2e7f7c2;
+    box-shadow: 0 0 12px #7883ea;
+    -moz-box-shadow: 0 0 12px #7883ea;
+    -o-box-shadow: 0 0 12px #7883ea;
+    -ms-box-shadow: 0 0 12px #7883ea;
+    -webkit-box-shadow: 0 0 12px #7883ea;
+  }
+  .shd:hover{
+    background-color: rgba(87, 146, 206, 0.267);
+    transition: 0.3s ease;
+  }
+  .col-md-2{
+    background: rgb(234, 247, 248);
+  }
+  .col-md-10 {
+    background: rgb(34,193,195);
+  background: linear-gradient(292deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+
+  }
+  
+.n_room{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  color: black;
+}
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 21px;
+}
+.titl{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+}

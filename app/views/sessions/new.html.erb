@@ -2,11 +2,11 @@
     <div class="row align-items-center">
         <div class="col-sm-12">
             <div class="row justify-content-center">
-                <div class="col-4 text-center">
+                <div class="col-4 text-center mt-5">
                   <%= form_for (:session) do |f| %>
-                    <%= f.label :username, 'Enter your username', :class =>'mb-5' %>
-                    <%= f.text_field :username, autocomplete: 'off', :class => 'form-control mb-5  ' %>
-                    <%= f.submit( 'Sign in',{:class =>'btn btn-success'}) %>
+                    <%= f.label :username, 'Введіть ім\'я користувача', :class =>'mb-3 display-6' %>
+                    <%= f.text_field :username, autocomplete: 'off', :class => 'form-control mb-3  ' %>
+                    <%= f.submit( 'Вхід',{:class =>'btn btn-success'}) %>
                   <% end %>
                   </div>
               </div>

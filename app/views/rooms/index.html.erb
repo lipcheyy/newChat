@@ -1,32 +1,35 @@
-<div class="row">
-    <div class="col-md-2">
-    <%= link_to 'Sign Out', signout_path,  :method => :delete %>
-    <h5> Hi <%= @current_user.username %> </h5>
-    
-    <h4> Users </h4>
+<div class="row ">
+    <div class="col-md-2 ">
+    <%= link_to 'Вихід', signout_path,  :method => :delete,class: " btn bb text-decoration-none mt-3 w-100" %>
+    <hr>
+    <h5 class="display-6"> Вітаю, <%= @current_user.username %> !</h5><hr>
+    <h4 class="titl text-center">Користувачі </h4>
     <div>
       <%= turbo_stream_from "users" %>
       <div id="users">
         <%= render @users %>
       </div>
     </div>
-    <h4> Rooms </h4>
+    <hr>
+    
     <%= render partial: "layouts/new_room_form" %>
     <div>
       <%= turbo_stream_from "rooms" %>
-      <div id="rooms">
+      <div id="rooms"><hr>
+      <h4 class="titl text-center"> Кімнати </h4>
         <%= render @rooms %>
       </div>
     </div>
   </div>
-  <div class="col-md-10 bg-dark text-light">
+  <div class="col-md-10  text-light overflow-x: hidden ">
     <% if @single_room %>
-        <h4 class="text-center"> <%= @user&.username || @single_room.name %> </h4>
+        <h4 class="text-center room-name"> <%= @user&.username || @single_room.name %> </h4>
         <%= turbo_stream_from @single_room %>
         <div id="messages">
             <%= render @messages%>
         </div>
-        <%= render partial: 'layouts/new_message_form' %>
+        <div><%= render partial: 'layouts/new_message_form' %></div>
     <% end %>
   </div>
+  
 </div>
